@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./odev2
+    command: python3 odev2.py.py  -h 0.0.0.0
+    volumes:
+      - ./odev2/:/usr/src/app/
+    ports:
+      - 5001:5000
